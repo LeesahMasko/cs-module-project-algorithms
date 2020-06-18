@@ -6,6 +6,8 @@ Returns: an integer
 import sys
 
 def eating_cookies(n, cache=None):
+    if cache is None:
+        cache = {}
     # Your code here
     #base cases
     if n == 0:
